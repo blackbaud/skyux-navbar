@@ -4,9 +4,6 @@
   "description": "SKY UX Navbar",
   "main": "bundles/bundle.umd.js",
   "module": "index.ts",
-  "engines": {
-    "node": ">=10.15.1"
-  },
   "scripts": {
     "build": "skyux build-public-library",
     "skyux": "skyux",
