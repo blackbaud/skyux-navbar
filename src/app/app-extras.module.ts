@@ -7,15 +7,18 @@ import {
 } from '@skyux/popovers';
 
 import {
+  SkyAppLinkModule
+} from '@skyux/router';
+
+import {
   SkyNavbarModule
 } from './public';
 
 @NgModule({
   exports: [
-    SkyNavbarModule,
-    SkyDropdownModule
-  ],
-  providers: [],
-  entryComponents: []
+    SkyAppLinkModule,
+    SkyDropdownModule,
+    SkyNavbarModule
+  ]
 })
 export class AppExtrasModule { }

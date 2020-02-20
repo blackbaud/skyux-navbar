@@ -1,1 +1,1 @@
-export * from './modules';
+export * from './modules/navbar/navbar.module';
