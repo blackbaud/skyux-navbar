@@ -25,7 +25,7 @@ describe('Navbar', () => {
 
   it('should match previous navbar screenshot when the user mouses over an item', (done) => {
     browser.actions()
-      .mouseMove(element(by.css('#screenshot-navbar .first-item')))
+      .mouseMove(element(by.css('.first-item')))
       .perform();
 
     expect('#screenshot-navbar').toMatchBaselineScreenshot(
@@ -38,7 +38,7 @@ describe('Navbar', () => {
 
   it('should match previous navbar screenshot when a dropdown is open', (done) => {
     browser.actions()
-      .mouseMove(element(by.css('#screenshot-navbar .sky-dropdown-button')))
+      .mouseMove(element(by.css('.sky-dropdown-button')))
       .perform();
 
     expect('#screenshot-navbar').toMatchBaselineScreenshot(
@@ -51,11 +51,11 @@ describe('Navbar', () => {
 
   it('should match previous navbar screenshot when the user is over a dropdown item', (done) => {
     browser.actions()
-      .mouseMove(element(by.css('#screenshot-navbar .sky-dropdown-button')))
+      .mouseMove(element(by.css('.sky-dropdown-button')))
       .perform();
 
     browser.actions()
-      .mouseMove(element(by.css('#screenshot-navbar .sky-dropdown-item:first-child')))
+      .mouseMove(element(by.css('.sky-dropdown-item:first-child')))
       .perform();
 
     expect('#screenshot-navbar').toMatchBaselineScreenshot(
