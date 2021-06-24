@@ -1,4 +1,4 @@
-# 5.0.0-beta.1 (2021-06-24)
+# 5.0.0-beta.1 (2021-06-25)
 
 - Added support for `@angular/core@^12` and `@skyux/i18n@^5.0.0-beta.1`. [#18](https://github.com/blackbaud/skyux-navbar/pull/18)
 
