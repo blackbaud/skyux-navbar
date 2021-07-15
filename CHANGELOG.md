@@ -1,4 +1,4 @@
-# 5.0.0-beta.2 (2021-07-14)
+# 5.0.0-beta.2 (2021-07-15)
 
 - Added support for `5.0.0-beta.*` versions of SKY UX component libraries. [#19](https://github.com/blackbaud/skyux-navbar/pull/19)
 
