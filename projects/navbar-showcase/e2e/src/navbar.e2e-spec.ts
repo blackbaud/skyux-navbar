@@ -10,8 +10,8 @@ import {
 } from '@skyux-sdk/e2e';
 
 describe('Navbar', () => {
-  beforeEach(() => {
-    SkyHostBrowser.get('visual/navbar');
+  beforeEach(async () => {
+    await SkyHostBrowser.get('visual/navbar');
   });
 
   it('should match previous navbar screenshot', (done) => {
@@ -23,8 +23,8 @@ describe('Navbar', () => {
     );
   });
 
-  it('should match previous navbar screenshot when the user mouses over an item', (done) => {
-    browser.actions()
+  it('should match previous navbar screenshot when the user mouses over an item', async (done) => {
+    await browser.actions()
       .mouseMove(element(by.css('.first-item')))
       .perform();
 
@@ -36,8 +36,8 @@ describe('Navbar', () => {
     );
   });
 
-  it('should match previous navbar screenshot when a dropdown is open', (done) => {
-    browser.actions()
+  it('should match previous navbar screenshot when a dropdown is open', async (done) => {
+    await browser.actions()
       .mouseMove(element(by.css('.sky-dropdown-button')))
       .perform();
 
@@ -49,12 +49,12 @@ describe('Navbar', () => {
     );
   });
 
-  it('should match previous navbar screenshot when the user is over a dropdown item', (done) => {
-    browser.actions()
+  it('should match previous navbar screenshot when the user is over a dropdown item', async (done) => {
+    await browser.actions()
       .mouseMove(element(by.css('.sky-dropdown-button')))
       .perform();
 
-    browser.actions()
+    await browser.actions()
       .mouseMove(element(by.css('.sky-dropdown-item:first-child')))
       .perform();
 
