@@ -1,9 +1,7 @@
-import {
-  Component
-} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'navbar-visual',
-  templateUrl: './navbar-visual.component.html'
+  selector: 'app-navbar-visual',
+  templateUrl: './navbar-visual.component.html',
 })
-export class NavbarVisualComponent { }
+export class NavbarVisualComponent {}
