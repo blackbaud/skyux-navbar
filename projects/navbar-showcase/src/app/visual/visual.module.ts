@@ -8,17 +8,14 @@ import { SkyDropdownModule } from '@skyux/popovers';
 import { NavbarVisualComponent } from './navbar/navbar-visual.component';
 
 @NgModule({
-  declarations: [
-    VisualComponent,
-    NavbarVisualComponent
-  ],
+  declarations: [VisualComponent, NavbarVisualComponent],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
     SkyNavbarModule,
-    SkyDropdownModule
-  ]
+    SkyDropdownModule,
+  ],
 })
-export class VisualModule { }
+export class VisualModule {}
